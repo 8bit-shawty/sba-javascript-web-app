@@ -14,7 +14,7 @@ async function handleSearch(e){
     const value = e.target.value;
     try{
         const patients = await searchPatients(value)
-        getPatients(patients)
+        renderCard(patients)
     } catch(error){
         console.log("Error searching the patients: ", error)
     }

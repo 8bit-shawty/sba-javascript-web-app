@@ -4,7 +4,7 @@
 export function renderCard(patients){
     const patientDiv = document.getElementById('patients')
     //make sure it is empty 
-    container.innerHTML = ''
+    patientDiv.innerHTML = ''
 
     //forEach patient we want to render a card that is a div 
     //that displays their id, name, diagnosis, and maybe a date
@@ -16,7 +16,7 @@ export function renderCard(patients){
         <div class='card h-100 border-rounded'>
             <div class="card-body">
                 <h3>PATIENT# ${patient.id}</h3>
-                <h3>NAME: ${patient.name}</h3>
+                <h6>NAME: ${patient.name}</h6>
                 <p class="card-text">${lorem}</p>
             </div>
         </div>
