@@ -34,19 +34,19 @@ export function renderCard(patients){
     });
 }
 
-export async function addPatient(){
-    //for each new patient we want an name and diagnosis
-    //not sure if the post automatically adds and id??
-    //(come back to this)
-    const newPatient = {
-        name: '',
-        diagnosis: ''
-    }
-    try {
-        const newlyCreatedPatient = await addNewPatient(newPatient);
-        console.log(`New patient added: `, newlyCreatedPatient)
-    } catch(error){
-        console.log("Error adding a new patient: ", error)
-    }
-}
+// export async function addPatient(){
+//     //for each new patient we want an name and diagnosis
+//     //not sure if the post automatically adds and id??
+//     //(come back to this)
+//     const newPatient = {
+//         name: '',
+//         diagnosis: ''
+//     }
+//     try {
+//         const newlyCreatedPatient = await addNewPatient(newPatient);
+//         console.log(`New patient added: `, newlyCreatedPatient)
+//     } catch(error){
+//         console.log("Error adding a new patient: ", error)
+//     }
+// }
 
